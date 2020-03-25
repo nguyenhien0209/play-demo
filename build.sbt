@@ -4,15 +4,13 @@ version := "1.0-SNAPSHOT"
 
 lazy val root = (project in file(".")).enablePlugins(PlayJava)
 
-scalaVersion := "2.11.6"
+scalaVersion := "2.11.7"
 
 libraryDependencies ++= Seq(
   javaJdbc,
   cache,
   javaWs
 )
-
-routesGenerator := InjectedRoutesGenerator
 
 enablePlugins(DebianPlugin)
 maintainer := "Nguyen Hien <nguyenhien.a1.pct@gmail.com>"
